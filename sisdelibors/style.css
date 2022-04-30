@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #cccccc;
+}
+
+#barra-lateral-container{
+    background-color: #183153;
+    height: 100vh;
+    width: 22rem;
+    
+}
+
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background: white;
+    z-index: -1;
+    
+}
+
+#side-bar-content{
+    position: fixed;
+    margin-top: 1.3rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.pestañas{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-right: 1rem;
+}
+
