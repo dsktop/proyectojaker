@@ -15,7 +15,7 @@
 <body>
 
     
-    
+<!--Barra de navegacion-->
      
     <div id="nav-bar">
         <div id="nav-bar-content" style="margin-left:22rem; display: inline-flex;">
@@ -30,11 +30,11 @@
                 <a href="añadir.html" id="añadirproducto-btn">+ Añadir Producto</a>
             </div>
 
-            <div class="notificacion" style="margin-top: 0.7rem; margin-left: 20rem;">
+            <div class="notificacion" style="margin-top: 0.7rem; margin-left: 34rem;">
                 <img src="..\img\campana.PNG" alt="no se encontro elemento">
             </div>
 
-            <div class="perfil" style="margin-top: 0.7rem; margin-left: 6rem; display: inline-flex;">
+            <div class="perfil" style="margin-top: 0.7rem; margin-left: 5rem; display: inline-flex;">
                 <a>Perfil</a>
                 <img src="..\img\perfil.PNG" alt="no se encontro elemento">
             </div>
@@ -43,6 +43,9 @@
         </div>
     </div>
 
+<!--Barra de navegacion end-->
+
+<!--Body Center, Aqui va el contenido-->
     <div id="body-content" style="color: black;">
         <div id="btns-header" style="margin-left: 60rem; margin-top: 2rem;">
             <button id="btn-modificar" class="btns-header"> <a href="modificar.html" style="text-decoration: none; color: black;">Modificar</a> </button>
@@ -58,9 +61,29 @@
                 <p>Stock</p>
                 <p>Vendidos</p>
             </div>
+            <div id="body-header-static1" style="display: inline-flex; margin-left: 2rem; margin-top: 2rem; font-weight: bold;">
+                <input type="checkbox" name="check1" id="checkbox1">
+                <p id="nombrelibro">libro1</p>
+                <p id="idlibro">11111</p>
+                <p id="grupolibro">Grupo1</p>
+                <p id="categorialibro">Categoria1</p>
+                <p id="stocklibro">56</p>
+                <p id="vendidoslibro">3</p>
+
+                <div class="btn-centro" style="margin-left: 4.5rem; margin-top: -0.5rem;">
+                    <button style="background: #04db7e; color: white;" id="btn-vendido" class="btns-center">Vendido!</button>
+                    <button style="border: #a9b0bb solid 2px;" id="btn-añadir" class="btns-center"> Añadir ejemplar</button>
+                    <button style="background: #ff2163; color: white;" id="btn-eliminar" class="btns-center">Eliminar Unidad</button>
+                </div>
+                
+                
+            </div>
         </div>
     </div>
 
+<!--Body Center end-->
+
+<!--Barra Lateral-->
    <div id="barra-lateral-container">
         <div id="side-bar-content">
             <p style="color: #a9b0bb;">FILTRAR PRODUCTOS</p>
@@ -124,7 +147,7 @@
             </form>
         </div>
     </div>
-
+<!--Barra Lateral end-->
     
 </body>
 </html>

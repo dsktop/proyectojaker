@@ -111,7 +111,7 @@ body{
 
 #buscar-inventario{
     width: 80%;
-    height: 2.5rem;
+    height: 2.4rem;
     margin-left: 0.5rem;
     border-radius: 10px;
     border: none;
@@ -188,7 +188,7 @@ body{
 #body-content {
     z-index: 0;
     position: absolute;
-    width: 87.5rem;
+    width: 94rem;
     height: 85vh;
     background: #ffffff;
     margin-left: 24rem;
@@ -220,7 +220,7 @@ body{
 #body-header-static{
     font-family:'Plus Jakarta Sans', sans-serif;
     padding-bottom: 1rem;
-    padding-right: 30rem;
+    padding-right: 37rem;
     border-bottom: #cccccc solid 2px;
 }
 
@@ -232,4 +232,69 @@ body{
 #body-header-static p{
     margin-right: 4rem;
     font-size: 17px;
+}
+
+#body-header-static1{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    border-bottom: #cccccc solid 2px;
+    
+}
+
+#body-header-static1 input{
+    margin-right: 6rem;
+    width: 20px;
+    height: 20px;
+}
+#body-header-static1 p{
+    position: static;
+    font-size: 17px;
+    
+    text-align: center;
+}
+
+#nombrelibro,
+#idlibro,
+#grupolibro,
+#categorialibro,
+#stocklibro,
+#vendidoslibro{
+    width: 6rem;
+}
+
+#nombrelibro{
+    margin-left: -1rem;
+}
+
+#idlibro{
+    margin-left: 0.7rem;
+}
+
+#grupolibro{
+    margin-left: 0.2rem;
+}
+
+#categorialibro{
+    margin-left: 2.2rem;
+}
+
+#stocklibro{
+    margin-left: 1.7rem;
+}
+
+#vendidoslibro{
+    margin-left: 2rem;
+}
+
+.btns-center{
+    height: 2.4rem;
+    border-radius: 50px;
+    margin-right: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Plus Jakarta Sans', sans-serif;
+    border: none;
 }
