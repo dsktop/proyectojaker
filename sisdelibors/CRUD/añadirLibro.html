@@ -27,7 +27,7 @@
             </div>
 
             <div class="añadirproducto-navbar" style="margin-top: 1rem;">
-                <a href="..\CRUD\añadirLibro.html" id="añadirproducto-btn">+ Añadir Producto</a>
+                <a href="añadirLibro.html" id="añadirproducto-btn">+ Añadir Producto</a>
             </div>
 
             <div class="notificacion" style="margin-top: 0.7rem; margin-left: 34rem;">
@@ -53,28 +53,8 @@
         </div>
         <div id="body-center">
             <div id="body-header-static" style="display: inline-flex; margin-left: 2rem; margin-top: 2rem;">
-                <input type="checkbox" name="check0" id="checkbox0">
                 <p>Nombre</p>
-                <p>Id</p>
-                <p>Grupo</p>
-                <p>Categoria</p>
-                <p>Stock</p>
-                <p>Vendidos</p>
             </div>
-            <div id="body-header-static1" style="display: inline-flex; margin-left: 2rem; margin-top: 2rem; font-weight: bold;">
-                <input type="checkbox" name="check1" id="checkbox1">
-                <p id="nombrelibro">libro1</p>
-                <p id="idlibro">11111</p>
-                <p id="grupolibro">Grupo1</p>
-                <p id="categorialibro">Categoria1</p>
-                <p id="stocklibro">56</p>
-                <p id="vendidoslibro">3</p>
-
-                <div class="btn-centro" style="margin-left: 4.5rem; margin-top: -0.5rem;">
-                    <button id="btn-vendido" class="btns-center">Vendido!</button>
-                    <button id="btn-añadir" class="btns-center"> Añadir ejemplar</button>
-                    <button id="btn-eliminar" class="btns-center">Eliminar Unidad</button>
-                </div>
                 
                 
             </div>
@@ -97,7 +77,7 @@
 
                 <div class="desplegables" id="id">
                 <p>ID</p>
-                <select id="select" name="selectid">
+                <select id="select" name="selectid" disabled>
                     <option class="option" value="value1"selected >Todos</option>
                     <option  class="option" value="value2"> hay que poner cosas aki feos</option>
                     <option class="option" value="value3"> hay que poner cosas aki feos</option>
@@ -106,7 +86,7 @@
 
                 <div class="desplegables" id="nombre">
                 <p>Nombre</p>
-                <select id="select" name="selectnombre">
+                <select id="select" name="selectnombre" disabled>
                     <option class="option" value="value1"selected > Todos</option>
                     <option  class="option" value="value2"> hay que poner cosas aki feos</option>
                     <option class="option" value="value3"> hay que poner cosas aki feos</option>
@@ -115,7 +95,7 @@
 
                 <div class="desplegables" id="grupo">
                 <p>Grupo</p>
-                <select id="select" name="selectgrupo">
+                <select id="select" name="selectgrupo" disabled>
                     <option class="option" value="value1"selected > Todos</option>
                     <option  class="option" value="value2"> hay que poner cosas aki feos</option>
                     <option class="option" value="value3"> hay que poner cosas aki feos</option>
@@ -124,7 +104,7 @@
 
                 <div class="desplegables" id="categoria">
                 <p>Categoria</p>
-                <select id="select" name="selectcategoria">
+                <select id="select" name="selectcategoria" disabled>
                     <option class="option" value="value1"selected > Todos</option>
                     <option  class="option" value="value2"> hay que poner cosas aki feos</option>
                     <option class="option" value="value3"> hay que poner cosas aki feos</option>
@@ -133,15 +113,15 @@
             
 
             <div id="asendente-desendente" style="margin-top: 2rem;">
-                <input type="radio" id="asendente" name="orden" value="AS">
+                <input type="radio" id="asendente" name="orden" value="AS" disabled>
                 <label for="asendente">Asendente</label><br>
-                <input type="radio" id="desendente" name="orden" value="DE">
+                <input type="radio" id="desendente" name="orden" value="DE" disabled>
                 <label for="desendente">Desendente</label><br>
             </div>
 
             <div id="botones-sidebar">
-                <input type="button" id="clean" value="Limpiar Filtros">
-                <input type="submit" id="apply" value="Aplicar">
+                <input type="button" id="clean" value="Limpiar Filtros" disabled>
+                <input type="submit" id="apply" value="Aplicar" disabled>
             </div>
 
             </form>
@@ -191,11 +171,11 @@
     }
 </script>
 
-<script>
+<!-- <script>
     window.onload = function(){
 
         document.getElementById('checkbox0').addEventListener('click', function(){
             document.querySelector("#checkbox1").click();
         })
     }
-</script>
+</script> -->
