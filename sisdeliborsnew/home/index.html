@@ -78,6 +78,39 @@
             
             
         </div>
+        <!--aki está la conexion a la base de datos-->
+        <?php
+      $sql="SELECT * from datos_de_usuario";
+      $result=mysqli_query($conexion,$sql);
+                                                            
+      
+      while($mostrar=mysqli_fetch_array($result)){
+       ?>  
+       <form action="">
+
+        
+       <div id="body-header-static1" style="display: inline-flex; margin-left: 2rem; margin-top: 2rem; font-weight: bold;">
+        <input type="checkbox" name="check1" id="checkbox1">
+        <p id="nombrelibro"><?php echo $mostrar['LibroMArtinfeo']?></p>
+        <p id="idlibro"><?php echo $mostrar['idlibro']?></p>
+        <p id="grupolibro"><?php echo $mostrar['grupo']?></p>
+        <p id="categorialibro"><?php echo $mostrar['categoria']?></p>
+        <p id="stocklibro"><?php echo $mostrar['stocklibro']?></p>
+        <p id="vendidoslibro"><?php echo $mostrar['librovendidos']?></p>
+
+            <div class="btn-centro" style="margin-left: 4.5rem; margin-top: -0.5rem;">
+                <button id="btn-vendido" class="btns-center">Vendido!</button>
+                <button id="btn-añadir" class="btns-center">Añadir ejemplar</button>
+                <button id="btn-eliminar" class="btns-center">Eliminar Unidad</button>
+            </div>
+        
+        
+        </div>
+      </form> 
+    <?php
+    }
+    ?>
+
     </div>
 </div>
 
