@@ -36,23 +36,32 @@ session_start();
         <form class="formulario" action="validacion.php" method="POST">
             <div class="campo">
                 <label for="correo" class="label">Email</label>
-                <input class="input input-img" type="email" placeholder="   email@servicio.com" name="correo" >
+                <div id="fondo-input" style="display: inline-flex;">
+                    <img style="width:2.5rem; height: 1.8rem; margin-top: 0.6rem; margin-left: 0.5rem;" src="..\img\email.jpg" alt="">
+                    <input class="input input-img" type="email" placeholder="email@servicio.com" name="correo" >
+                </div>
             </div>
 
-            <div class="campo">
+            <div class="campo" >
                 <label class="label">Contraseña</label>
-                <input class="input" type="password" name="password">
+                <div id="fondo-input" style="display: inline-flex;">
+                    <img style="width:2rem; height: 1.9rem; margin-top: 0.6rem; margin-left: 0.8rem;" src="..\img\candado.jpeg" alt="">
+                    <input class="input" id="input-email" type="password" name="password" placeholder="">
+                    <img id="ojo" src="..\img\ojo.jpeg" alt="">
+                    <img id="ojorayado" src="..\img\ojoraya.png" alt="">
+                </div>
+                
             </div>
 
             <div class="campo-recuerda">
                 <label class="label-recuerda">
-                    <input class="checkbox-recuerda" type="checkbox"/>Recuerdame
+                    <input class="checkbox-recuerda" id="input-contra" type="checkbox"/>Recuerdame
                 </label> <a class="clave-olvidada" href="#">¿Olvidaste La Contraseña?</a>
             </div>
             
             <div class="buttons">
             <input type="hidden" name="enviado" value="1">
-            <a class="buttong" href="">Iniciar Con Google</a>
+            <a style="display: inline-flex;" class="buttong" href=""><img style="width:2.5rem; height: 1.6rem; margin-top: -0.1rem; margin-right: 1rem;" src="..\img\g.jpeg" alt="">Iniciar Con Google</a>
             <button type="submit" name="submit" class="btn btn-primary btn-lg btnIniciar">Iniciar Sesión</button>
             </div>
         </form>
@@ -60,3 +69,21 @@ session_start();
     </div>
 </body>
 </html>
+<script>
+
+    let ojo = document.getElementById('ojo');
+    let ojor = document.getElementById('ojorayado');
+
+    ojo.addEventListener('click', function(){
+        ojo.style.visibility = "hidden";
+        ojorayado.style.visibility = "visible";
+        document.querySelector("#input-email").type = "text"
+    })
+    ojorayado.addEventListener('click', function(){
+        ojorayado.style.visibility = "hidden";
+        ojo.style.visibility = "visible";
+        document.querySelector("#input-email").type = "password"
+    })
+
+
+</script>

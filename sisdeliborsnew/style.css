@@ -55,7 +55,25 @@ img {
 .campo {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    width: 23rem;
+    margin-bottom: 3rem;
+}
+
+#ojorayado{
+    position: fixed; 
+    width: 2.25rem;
+    margin-top: 0.55rem; 
+    margin-left: 27.8rem; 
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+#ojo{
+    width:2.9rem; 
+    height: 1.9rem; 
+    margin-top: 0.6rem; 
+    margin-left: 0.8rem; 
+    border-radius: 50%;
 }
 
 .label {
@@ -65,22 +83,28 @@ img {
     padding: 0.5rem;
 }
 
-.input {
+#fondo-input{
+    background: white;
+    border-radius: 50px;
+    width: 30.5rem;
+}
+
+.input{
 	flex: 1;
 	border: 1px solid black;
     border: 0;
     border-radius: 1.5rem;
     box-sizing: border-box;
-    padding: 25px 25px;
-    width: 500px;
+    height: 3rem ;
+    width: 23rem;
+    margin-left: 0rem;
+    font-size: 20px;
 }
 
-.input-img {
-    background-image: url(../img/email.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 2rem;
+.input:focus{
+    outline: none;
 }
+
 .label-recuerda {
     text-align: left;
     color: white;
@@ -89,7 +113,8 @@ img {
 }
 
 .campo-recuerda {
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2rem;
 }
 
 .checkbox-recuerda {
