@@ -363,3 +363,49 @@ body{
     background: #a0143e; 
     color: white;
 }
+
+ul, ol {
+    list-style:none;
+}
+
+.nav{
+    margin-left: -6rem ;
+}
+
+.nav > li {
+    float:center;
+}
+
+.nav li a {
+    margin-left: -7.7rem;
+    margin-top: 3.5rem;
+    background-color:#ffffff;
+    color:#000000;
+    text-decoration:none;
+    padding: 1rem;
+    width: 10rem;
+    display:block;
+    text-align: center;
+}
+
+.nav li a:hover {
+    background-color:#ff2163;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    
+    top:0px;
+}
